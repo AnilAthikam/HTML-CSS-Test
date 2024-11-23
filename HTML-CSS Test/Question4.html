@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navigation Bar</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    
+}
+nav {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;  
+    padding: 10px 20px; 
+    
+}
+
+nav a {
+    text-decoration: none; 
+    padding: 10px 15px; 
+    font-size: 16px;
+}
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column; 
+    }
+
+    nav a {
+        margin-bottom: 10px; /
+    }
+
+    nav a:last-child {
+        margin-bottom: 0; 
+    }
+}
+</style>
+</head>
+<body>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+    </nav>
+</body>
+</html>
+
