@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+<style>
+        .gallery {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            padding: 20px;
+        }
+        .gallery img {
+            width: 250px;
+            height: 180px;
+            object-fit: cover;
+            transition: filter 0.3s ease-in-out;
+            filter: grayscale(100%);
+        }
+        .gallery img:hover {
+            filter: grayscale(0%);
+        }
+</style>
+</head>
+<body>
+    <!--13.Create an image gallery with hover effects on images.
+
+HTML Requirements:
+
+- Use a `div` with the class `gallery` containing four `img` tags.
+
+CSS Task:
+
+- Apply a grayscale filter to the images by default.
+- Remove the grayscale filter when an image is hovered over.
+- Add a transition effect for the filter. -->
+    <div class="gallery">
+        <img src="https://www.shutterstock.com/image-photo/closeup-reptile-natural-habitat-on-600nw-2247945761.jpg" alt="Image 1">
+        <img src="https://c0.wallpaperflare.com/preview/239/723/610/wallpaper-background-jaguar-wildlife.jpg" alt="Image 2">
+        <img src="https://t3.ftcdn.net/jpg/06/72/13/98/240_F_672139879_8BIYhnRGzL4zmi5cXhavhk8M3Mov16z2.jpg" alt="Image 3">
+        <img src="https://t4.ftcdn.net/jpg/08/27/46/93/240_F_827469399_kbKnoe0oKj4TRaL5bO5jlJsZrm6bE0XF.jpg" alt="Image 4">
+    </div>
+</body>
+</html>
