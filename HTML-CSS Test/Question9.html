@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Overlapping Boxes</title>
+<style>
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  position: relative; 
+}
+.box1 {
+  width: 150px;
+  height: 150px;
+  background-color: #3498db;
+  position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  z-index: 1; 
+}
+.box2 {
+  width: 150px;
+  height: 150px;
+  background-color: #e74c3c;
+  position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  z-index: 4;
+  margin-left: 50px;
+}
+</style>
+
+</head>
+<body>
+    <!--9. Create an overlapping layout with two boxes.
+
+HTML Requirements:
+
+- Use two `div` elements with classes `box1` and `box2`.
+
+CSS Task:
+
+- Position `box1` at the center of the page using `absolute` positioning.
+- Position `box2` overlapping `box1` but move it slightly using `z-index` to make it appear above. -->
+
+  <div class="box1"></div>
+  <div class="box2"></div>
+
+</body>
+</html>
